@@ -73,11 +73,15 @@ brew update
 
 echo "Installing Tools with Homebrew..."
 brew install ripgrep
+brew install fnm
+
 
 echo "Install Apps..."
 brew install --cask iterm2
 
 echo "Cleanup Homebrew..."
 brew cleanup
+
+# eval "$(fnm env --use-on-cd)" should be added to .zshrc can do that later still dont understand :D 
 
 
