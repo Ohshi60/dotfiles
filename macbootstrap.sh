@@ -68,3 +68,16 @@ if test !$(which brew); then
     echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
+
+brew update
+
+echo "Installing Tools with Homebrew..."
+brew install ripgrep
+
+echo "Install Apps..."
+brew install --cask iterm2
+
+echo "Cleanup Homebrew..."
+brew cleanup
+
+
